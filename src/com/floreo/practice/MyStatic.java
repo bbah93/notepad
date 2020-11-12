@@ -23,5 +23,5 @@ public class MyStatic {
     public void myMethodTwo(){
         System.out.println("I am not static");
     }
-
+// comment stuff
 }
