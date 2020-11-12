@@ -1,44 +1,37 @@
 package com.floreo;
 
-import java.util.HashMap;
+
+import com.floreo.OOP.Apple;
+import com.floreo.designpatterns.StaticFactoryMethod;
 
 public class Main {
-
-    //single line comment
-
-    /*
-    multi line comment
-     */
-
-    /**
-    green comment
-     */
-
-    //declare
-    static byte myByte;
-    static short myShort;
-    static int myInt;
-    static long myLong;
-    static float myFloat;
-    static double myDouble;
-    static boolean myBoolean;
-    static char myChar;
-    static String myString;
-
-    static HashMap<Integer, String> importantBirthdays = new HashMap<>();
 
 
     public static void main(String[] args) {
 
-        importantBirthdays.put(18, "you can now vote");
-        importantBirthdays.put(21, "you can now drink");
+        StaticFactoryMethod staticFactoryMethod = StaticFactoryMethod.getNewInstance();
+        StaticFactoryMethod staticFactoryMethod2 = StaticFactoryMethod.getNewInstance();
+        StaticFactoryMethod staticFactoryMethod3 = StaticFactoryMethod.getNewInstance();
+        StaticFactoryMethod staticFactoryMethod4 = StaticFactoryMethod.getNewInstance();
+        StaticFactoryMethod staticFactoryMethod5 = StaticFactoryMethod.getNewInstance();
+        StaticFactoryMethod staticFactoryMethod6 = StaticFactoryMethod.getNewInstance();
 
-        int[] arr = new int[5];
+        System.out.println(staticFactoryMethod);
+        System.out.println(staticFactoryMethod.instanceCount);
+        System.out.println(staticFactoryMethod2);
+        System.out.println(staticFactoryMethod2.instanceCount);
+        System.out.println(staticFactoryMethod3);
+        System.out.println(staticFactoryMethod3.instanceCount);
+        System.out.println(staticFactoryMethod4);
+        System.out.println(staticFactoryMethod4.instanceCount);
+        System.out.println(staticFactoryMethod5);
+        System.out.println(staticFactoryMethod5.instanceCount);
+        System.out.println(staticFactoryMethod6);
+        System.out.println(staticFactoryMethod6.instanceCount);
 
-        String birthdayMessage = importantBirthdays.get(21);
 
-        boolean isValuePresent = importantBirthdays.containsValue("you can now drink");
 
-        System.out.println(arr);
+        Apple myApple = new Apple();
+
     }
 }

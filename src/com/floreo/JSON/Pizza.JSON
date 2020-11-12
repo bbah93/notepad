@@ -1,0 +1,10 @@
+{
+  "cheese" : "Mozzarella",
+  "toppingCount": 3,
+  "fresh": true,
+  "toppings": [
+    "Anchovies",
+    "Olives",
+    "Pineapple"
+  ]
+}
